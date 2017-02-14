@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <title>GPS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="gps.css">
+  <script type="text/javascript">
+    function change_onglet(name){
+      document.getElementById("onglet_"+anc_onglet).className = "onglet_0 onglet";
+      document.getElementById("onglet_"+name).className = "onglet_1 onglet";
+      document.getElementById("contenu_onglet_"+anc_onglet).style.display = "none";
+      document.getElementById("contenu_onglet_"+name).style.display = "block";
+      anc_onglet = name;
+    }
+  </script>
+</head>
+<body>
+  <img src="images/logo.png" alt="GPS" id="header"/>
+  <div class="systeme_onglets">
+    <div class="onglets">
+      <span class="onglet_0 onglet" id="onglet_accueil" onclick="javascript:change_onglet('accueil');">Accueil</span>
+      <span class="onglet_0 onglet" id="onglet_presentation" onclick="javascript:change_onglet('presentation');">Présentation</span>
+      <span class="onglet_0 onglet" id="onglet_demo" onclick="javascript:change_onglet('demo');">Démo</span>
+      <span class="onglet_0 onglet" id="onglet_getting" onclick="javascript:change_onglet('getting');">Ivan A. Getting</span>
+      <span class="onglet_0 onglet" id="onglet_contact" onclick="javascript:change_onglet('contact');">Contact</span>
+    </div>
+    <div class="contenu_onglets">
+      <div class="contenu_onglet" id="contenu_onglet_accueil">
+        <h2>Accueil</h2>
+        <p>Sur ce site, nous allons vous présenter</p>
+        <ul>
+          <li>le fonctionnement du GPS</li>
+          <li>une démonstration</li>
+          <li>Ivan A. Getting, l'inventeur du GPS</li>
+        </ul>
+      </div>
+      <div class="contenu_onglet" id="contenu_onglet_presentation">
+        <h2>Présentation</h2>
+        <p>À l'origine, le GPS était un projet de recherche de l'armée américaine. Il a été lancé dans les années 1960 à la demande du président Richard Nixon. La réalisation a été confiée à Ivan A. Getting qui a conçu le principe d'un groupe de satellites gravitant en orbite et émettant des ondes radio UHF captées par des récepteurs GPS.<br/><br/>
+          Le premier satellite est lancé en 1978. En 1995, le déploiement des 24 satellites opérationnels (plus 4 en réserve) est achevé. Le système devient alors fonctionnel.<br/><br/>
+          En 1983, le président Ronald Reagan, à la suite de la mort des 269 passagers du vol 007 Korean Airlines, propose que la technologie GPS soit disponible gratuitement aux civils, une fois opérationnelle. Une seconde série de satellites est lancée à partir de 1989 en vue de constituer une flotte suffisante.<br/><br/>
+          En 1995, le nombre de satellites disponibles permet de rendre le GPS opérationnel en permanence sur l'ensemble de la planète, avec une précision limitée à une centaine de mètres pour un usage civil. En 2000, le président Bill Clinton confirme l'intérêt de la technologie à des fins civiles et autorise une diffusion non restreinte des signaux GPS, permettant une précision d'une dizaine de mètres et une démocratisation de la technologie au grand public à partir du milieu des années 2000.<br/><br/>
+          Les États-Unis continuent de développer leur système par le remplacement et l'ajout de satellites ainsi que par la mise à disposition de signaux GPS complémentaires, plus précis et demandant moins de puissance aux appareils de réception. Un accord d'interopérabilité a également été confirmé entre les systèmes GPS et Galileo afin que les deux systèmes puissent utiliser les mêmes fréquences et assurer une compatibilité entre eux.<br/><br/>
+          Deux autres systèmes ont été mis au point par la Russie, le <a href="https://fr.wikipedia.org/wiki/GLONASS" target="_blank">GLONASS</a> à partir de 1980, et par la Chine, le <a href="https://fr.wikipedia.org/wiki/Beidou" target="_blank">Beidou</a> initié en 2000.</p>
+      </div>
+      <div class="contenu_onglet" id="contenu_onglet_demo">
+        <h2>Démonstration</h2>
+        <p align="center">(en anglais)</p>
+        <iframe src="https://www.youtube.com/embed/IoRQiNFzT0k" allowfullscreen></iframe>
+      </div>
+      <div class="contenu_onglet" id="contenu_onglet_getting">
+        <h2>Ivan A. Getting</h2>
+        <img src="images/getting.jpg" alt="Ivan A. Getting" id="photo"/><p>Ivan Alexander Getting (18 janvier 1912 – 11 octobre 2003) était un physicien et ingénieur en électrotechnique Américain, connu pour avoir développé le GPS (avec Roger L. Easton et Bradford Parkinson).<br/>
+          Il était le co-directeur (l'autre co-directeur étant Louis Ridenour) du groupe de recherche qui a développé le SCR-584, un radar à micro-ondes, pendant la Seconde Guerre Mondiale.</p>
+      </div>
+      <div class="contenu_onglet" id="contenu_onglet_contact">
+        <h2>Contacts</h2>
+        <form method="post">
+          <fieldset>
+            <legend>Vos coordonnées</legend>
+            <div class="formulaire">
+              <label for="nom">Nom :</label><br/>
+              <input type="text" name="nom" class="txtcontact"/>
+            </div>
+            <div class="formulaire">
+              <label for="prenom">Prénom :</label><br/>
+              <input type="text" name="prenom" class="txtcontact"/>
+            </div>
+            <div class="formulaire">
+              <label for="mail">E-mail :</label><br/>
+              <input type="email" name="mail" class="txtcontact"/>
+            </div>
+            <label for="phone">Téléphone :</label><br/>
+            <input type="tel" name="phone" class="txtcontact"/>
+          </fieldset>
+          <fieldset>
+            <legend>Raisons de nous contacter</legend>
+            <textarea name="raisons" class="txtcontact"></textarea>
+          </fieldset>
+          <input type="submit" value="Envoyer" id="button1"/>
+          <input type="reset" value="Effacer" id="button2"/>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var anc_onglet = "accueil";
+    change_onglet(anc_onglet);
+  </script>
+</body>
+</html>

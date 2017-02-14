@@ -1,0 +1,113 @@
+body {
+  background-color : #4099FF;
+}
+
+h1 {
+  font-size : 50px;
+}
+
+h2 {
+  font-size : 30px;
+}
+
+h1, h2 {
+  text-align : center;
+  font-family : serif;
+}
+
+p, ul, form, a {
+  font-family : sans-serif;
+  font-size : 20px;
+}
+
+a {
+  color : #32659F;
+}
+
+a:hover {
+  color : #74879C;
+}
+
+p {
+  padding-left : 2%;
+  padding-right : 2%;
+}
+
+textarea {
+  width : 98%;
+  height : 75px;
+}
+
+iframe {
+  border : 0;
+  display : block;
+  margin : auto;
+}
+
+.onglet {
+	display : inline-block;
+	margin : 0px -3px;
+	padding : 3px 10px;
+	border : 1px solid black;
+	cursor : pointer;
+}
+
+.onglet:first-child {
+  margin-left : auto;
+}
+
+.onglet_0 {
+	background-color : #D8EBFF;
+	border-bottom : 1px solid black;
+}
+
+.onglet_1 {
+	background-color : #FFF;
+	border-bottom : 0px solid black;
+	padding-bottom : 4px;
+}
+
+.contenu_onglet {
+	background-color : #FFF;
+	border : 1px solid black;
+	margin-top : -1px;
+	padding : 5px;
+	display : none;
+}
+
+.formulaire {
+  padding-bottom : 7%;
+}
+
+.txtcontact {
+  overflow : scroll;
+  background-color : #BADBFF;
+  color : #000;
+}
+
+#photo, #header {
+  width : 75%;
+  margin-left : 12.5%;
+}
+
+#button1, #button2 {
+  background-color: #4099FF;
+  color : #FFF;
+}
+
+#button1:hover, #button2:hover {
+  background-color : #BADBFF;
+}
+
+#button1 {
+  margin-left: 20%;
+}
+
+#button2 {
+  float : right;
+  margin-right: 20%;
+}
+
+:focus {
+  background-color : #D8EBFF;
+}
