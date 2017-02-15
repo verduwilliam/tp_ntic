@@ -16,7 +16,7 @@
   </script>
 </head>
 <body>
-  <img src="images/logo.png" alt="GPS" id="header"/>
+  <img src="images/logo.png" alt="GPS" id="header">
   <div class="systeme_onglets">
     <div class="onglets">
       <span class="onglet_0 onglet" id="onglet_accueil" onclick="javascript:change_onglet('accueil');">Accueil</span>
@@ -53,35 +53,35 @@
       </div>
       <div class="contenu_onglet" id="contenu_onglet_getting">
         <h2>Ivan A. Getting</h2>
-        <img src="images/getting.jpg" alt="Ivan A. Getting" id="photo"/><p>Ivan Alexander Getting (18 janvier 1912 – 11 octobre 2003) était un physicien et ingénieur en électrotechnique Américain, connu pour avoir développé le GPS (avec Roger L. Easton et Bradford Parkinson).<br/>
+        <img src="images/getting.jpg" alt="Ivan A. Getting" id="photo"><p>Ivan Alexander Getting (18 janvier 1912 – 11 octobre 2003) était un physicien et ingénieur en électrotechnique Américain, connu pour avoir développé le GPS (avec Roger L. Easton et Bradford Parkinson).<br/>
           Il était le co-directeur (l'autre co-directeur étant Louis Ridenour) du groupe de recherche qui a développé le SCR-584, un radar à micro-ondes, pendant la Seconde Guerre Mondiale.</p>
       </div>
       <div class="contenu_onglet" id="contenu_onglet_contact">
         <h2>Contacts</h2>
-        <form method="post">
+        <form action="#" method="post">
           <fieldset>
             <legend>Vos coordonnées</legend>
             <div class="formulaire">
-              <label for="nom">Nom :</label><br/>
-              <input type="text" name="nom" class="txtcontact"/>
+              <label for="nom">Nom :</label><br>
+              <input type="text" name="nom" class="txtcontact" placeholder="Votre nom" required>
             </div>
             <div class="formulaire">
-              <label for="prenom">Prénom :</label><br/>
-              <input type="text" name="prenom" class="txtcontact"/>
+              <label for="prenom">Prénom :</label><br>
+              <input type="text" name="prenom" class="txtcontact" placeholder="Votre prénom" required>
             </div>
             <div class="formulaire">
-              <label for="mail">E-mail :</label><br/>
-              <input type="email" name="mail" class="txtcontact"/>
+              <label for="mail">E-mail :</label><br>
+              <input type="email" name="mail" class="txtcontact" placeholder="Votre adresse mail" required>
             </div>
-            <label for="phone">Téléphone :</label><br/>
-            <input type="tel" name="phone" class="txtcontact"/>
+            <label for="phone">Téléphone :</label><br>
+            <input type="tel" name="phone" class="txtcontact" placeholder="Votre numéro de téléphone" required>
           </fieldset>
           <fieldset>
             <legend>Raisons de nous contacter</legend>
             <textarea name="raisons" class="txtcontact"></textarea>
           </fieldset>
-          <input type="submit" value="Envoyer" class="buttons"/>
-          <input type="reset" value="Effacer" class="buttons"/>
+          <input type="submit" value="Envoyer" class="buttons">
+          <input type="reset" value="Effacer" class="buttons">
         </form>
       </div>
     </div>
