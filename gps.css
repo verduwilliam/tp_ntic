@@ -17,6 +17,10 @@ p, ul, form, a {
   font-size: 1em;
 }
 
+ul {
+  list-style-type: square;
+}
+
 a {
   color: #32659F;
 }
