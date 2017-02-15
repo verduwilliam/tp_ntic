@@ -96,27 +96,21 @@ textarea {
   margin-left : 5%;
 }
 
-#photo, #header {
-  width : 75%;
-  margin-left : 12.5%;
-}
-
-#button1, #button2 {
+.buttons {
   background-color : #4099FF;
   color : #FFF;
-}
-
-#button1:hover, #button2:hover {
-  background-color : #BADBFF;
-}
-
-#button1 {
+  width : 20%;
+  min-width : 65px;
   margin-left : 20%;
 }
 
-#button2 {
-  float : right;
-  margin-right : 20%;
+.buttons:hover {
+  background-color : #BADBFF;
+}
+
+#photo, #header {
+  width : 75%;
+  margin-left : 12.5%;
 }
 
 :focus {
