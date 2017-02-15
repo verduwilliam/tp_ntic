@@ -70,6 +70,11 @@ textarea {
 
 .formulaire {
   padding-bottom: 7%;
+  margin-left: 2%;
+}
+
+.formulaire:last-child {
+  padding-bottom: 0%
 }
 
 .txtcontact {
@@ -84,7 +89,8 @@ textarea {
 	padding-top: 25px;
 	height: 0px;
 }
-.yt iframe {
+
+iframe {
 	position: absolute;
 	top: 0px;
 	left: 0px;
