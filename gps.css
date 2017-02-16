@@ -60,7 +60,8 @@ textarea {
 	background-color: #FFF;
 	border-bottom: 0px solid black;
 	padding-bottom: 0.55em;
-  width: 40%;
+  width: 35%;
+  padding-left: 1em;
 }
 
 .contenu_onglet {
