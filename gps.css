@@ -39,7 +39,7 @@ textarea {
 .onglet {
 	display: inline-block;
 	margin: 0px -3px;
-	padding: 0.5em 1em;
+	padding: 0.5em 0em;
 	border: 1px solid black;
 	cursor: pointer;
 }
@@ -51,12 +51,16 @@ textarea {
 .onglet_0 {
 	background-color: #D8EBFF;
 	border-bottom: 1px solid black;
+  width: 14.5%;
+  overflow-x: hidden;
+  margin-bottom: -12.5px;
 }
 
 .onglet_1 {
 	background-color: #FFF;
 	border-bottom: 0px solid black;
 	padding-bottom: 0.55em;
+  width: 40%;
 }
 
 .contenu_onglet {
