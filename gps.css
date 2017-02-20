@@ -86,7 +86,7 @@ iframe {
 }
 
 .formulaire {
-  padding-bottom: 7%;
+  padding-bottom: 3em;
   margin-left: 2%;
 }
 
@@ -137,4 +137,20 @@ iframe {
 
 :focus {
   background-color: #FDFFB5;
+}
+
+@media screen and (min-width: 600px){
+  #header{
+    width: 450px;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 400px){
+  #photo{
+    width: 280px;
+    display: block;
+    margin: auto;
+  }
 }
